@@ -103,8 +103,8 @@ jobs:
           context: .
           file: Web.Dockerfile
           build-args: |
-            WEB_HOST={{vars.WEB_HOST_URL}}
-            WEB_DEFAULT_API={{vars.API_URL}}
+            WEB_HOST=${{vars.WEB_HOST_URL}}
+            WEB_DEFAULT_API=${{vars.API_URL}}
           platforms: linux/amd64,linux/arm64
           push: true
           tags: ${{ steps.meta.outputs.tags }}
