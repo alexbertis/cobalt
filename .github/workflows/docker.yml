@@ -5,7 +5,7 @@ on:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME_BASE: ${{ github.repository_owner }}
+  IMAGE_NAME_BASE: ${{ github.repository }}
 
 jobs:
   build-and-push-api:
